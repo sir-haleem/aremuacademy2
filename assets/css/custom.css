@@ -1,0 +1,371 @@
+#container {
+    margin-top: 60%;
+    /*height: 3000px;*/
+     ;
+    
+}
+
+html, body, .welcome-tab, .welcome-tab .main-info, .carousel-inner, .carousel-inner .item  {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lucida Sans Unicode', 'Arial', serif;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.welcome-tab {
+    width: 100%;
+
+}
+
+.main-info .content-one, .main-info .content-three {
+    width: 100%;
+    height: 47%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-info .content-one {
+    background-size: 100% 100%;
+    background: url("../img/building.png")  no-repeat fixed center / cover;
+}
+
+.main-info .content-two {
+    width: 100%;
+    height: 6%;
+    padding: 0;
+    margin: 0;
+}
+.content-one .content-target, .content-two .content-target, .content-three .content-target {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgba(0, 0, 0, .8);
+}
+.content-one .content-target hgroup {
+    padding: 10px 0;
+}
+.content-target h1 {
+    /*position: relative;*/
+    margin: 0;
+
+    font-size: 220%;
+    
+
+}
+
+.content-target h1, .content-target h2, .content-target h3 {
+
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+    
+}
+
+.content-target h1, .content-target h2 {
+    font-weight: bolder;
+    padding: 26px 0;
+}
+
+.carousel-inner .item-1 {
+    background-size: 100% 100%;
+    background: url("../img/new/graphics-882726_960_720.png") no-repeat fixed center / cover;
+}
+
+.carousel-inner .item-2 {
+    background-size: 100% 100%;
+    background: url("../img/new/author-1322627_960_720.jpg");
+}
+
+.carousel-inner .item-3 {
+    background-size: 100% 100%;
+    background: url("../img/new/law-1509436_960_720.jpg") no-repeat fixed center / cover;
+}
+
+
+
+
+
+
+
+nav.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background: #37474f;
+    -webkit-transition: background .5s ease-out;
+	transition: background .5s ease-out;
+    z-index: 999;
+}
+
+#brand-name {
+    display: none;
+}
+
+ul.animation-nav {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+}
+
+ul.animation-nav li {
+    display: table-cell;
+}
+
+ul.animation-nav li a {
+    display: block;
+    color: #fcca2f;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+
+ul.animation-nav {
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+ul.animation-nav a {
+    padding: 1em;
+    background-color: #241456;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none
+}
+
+ul.animation-nav a:hover {
+    background-color: #241475;
+}
+
+
+/* Copy Tab*/
+
+div.copy-tab {
+    background-color: darkorange; 
+    padding: 0;
+    margin: 0;
+}
+
+header h2 {
+    
+  margin-bottom: 25px;
+  font-size: 2.3rem;
+}
+
+header h2:after {
+  content: '';
+  display: block;
+  width: 10%;
+  padding-top: 5px;
+  border-bottom: 3px solid whitesmoke;
+}
+
+.copy-tab .about .text {
+    background-color: hsla(33, 100%, 7%, 0.4);
+    padding: 10px;
+  border-radius: 5px;
+    padding: 15px;
+    color: white
+}
+
+.about .about-btn, .objective .objective-btn {
+  position: relative;
+  margin-top: 20px;
+  color: white;
+  background: steelblue;
+  box-shadow: 0 8px #3b6d97;
+}
+
+.about .about-btn:hover, .objective .objective-btn:hover {
+  background: #427aa9;
+  color: white;
+}
+
+.about .about-btn:after {
+  content: '☃';
+  padding: 5px;
+  font-size: 1.6em;
+}
+
+.about .about-btn:active, .objective .objective-btn:active {
+  box-shadow: 0 4px #3b6d97;
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+/* Responsiveness */
+
+
+@media (min-width: 768px) {
+  .copy-tab .about .text{
+    margin-top: 22px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .copy-tab .about .text{
+    margin-top: 35px;
+
+  }
+
+  .welcome-tab {
+      height: 3em;
+  }
+
+  .content-three {
+      display: none
+  }
+
+  .image-container {
+      padding-top: 15px;
+      margin: .75em 0;
+  }
+  .management-tab  {
+      padding: 0;
+      margin: 0;
+  }
+
+    .management-tab .img {
+        margin-bottom: 10px;
+        
+}
+
+}
+
+
+.copy-tab .about, .about .text, .about p, .about header {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.copy-tab .about .title {
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.about .text, objective .text {
+    padding: 15px;
+}
+
+.about .title {
+    padding: 5px;
+}
+
+p.content {
+    font-size: 120%;
+}
+
+div.objective {
+    background-color: mediumorchid;
+    color: whitesmoke;
+    padding: 15px;
+    margin: 0;
+}
+
+div.objective .text {
+    padding: .75em;
+    background-color: rgba(0, 0, 0, .3); 
+}
+
+div.course-list-tab > header {
+    /*margin-top: 30px;*/
+}
+
+div.course-list-tab{
+    background-color:  rgba(0, 0, 0, .8);
+    color: white;
+    margin: 0;
+    padding: 15px 5px;
+}
+
+.table > tbody > tr:hover, .table > thead > tr:hover {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+div.course-list-tab .btn {
+    margin-top: 15px;
+}
+
+.gallery-tab {
+    padding:15px;
+    background: rgba(225, 13, 225, .2)
+}
+
+.gallery-tab .col-xs-6, .gallery-tab .col-sm-3 {
+    padding: 15px;
+}
+
+.applications-tab {
+    background-color: grey;
+    padding: 40px 10px;
+}
+
+.applications-tab input {
+    border: 2px solid deepskyblue;
+    color: black;
+    font-weight: bold;
+}
+
+p.help-block {
+    color: red;
+}
+
+.application-form legend {
+    font-size: 220%;
+}
+
+div.contact-tab{
+    background-color: #07273D;
+    color: white;
+}
+
+.form button {
+    margin-left: 15px;
+    border: 3px solid #90a4ae;
+}
+
+form input, form textarea {
+    
+    border: 2px solid lightgrey;
+}
+
+.contact .form-control {
+    border: 3px solid #90a4ae;
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    background-color: #07272F;
+}
+
+.contact-form-tab .contact {
+    padding: 0 0 15px 0;
+    margin: 0;
+    background-color: #07273D;
+    
+}
+
+footer{
+    padding-top: 5px;
+    color: white; 
+    background-color: #241456;
+}

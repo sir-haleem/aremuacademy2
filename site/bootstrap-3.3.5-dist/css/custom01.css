@@ -1,0 +1,19 @@
+.btn { background: #030;
+-moz-border-radius:5px 5px 5px 5px;
+-khtml-border-radius:5px 5px 5px 5px;
+-webkit-border-radius:5px 5px 5px 5px;
+border-radius:5px 5px 5px 5px;
+	box-shadow: 0px 0px 1px 1px #FFF inset;
+	border:1px solid #000;
+	color:#FFF;
+	text-shadow: 1px 1px 0px #630;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	padding-top:2px;
+	padding-bottom:4px;
+}
+.btn:hover {
+background: #060;
+cursor:pointer;	
+}

@@ -99,7 +99,7 @@ $(document).on('ready', function () {
                 if(data.status == "Admitted") {
                     alert(data.status);
                     $('p.help-block').
-                        html('You have been admitted, download your <a href="/application/admission-letter.php?' 
+                        html('You have been admitted, download your <a href="/application/admission-letter.php?jamb_number=' 
                             + data.jamb_number + 
                             '"><strong class="text-danger">Admission Letter</strong></a>');
                 }
@@ -115,7 +115,7 @@ $(document).on('ready', function () {
     });
 
     appFunctions.contactForm().submit(function (evt) {
-        
+
         if(appFunctions.contactFormName() < 2) {
             evt.preventDefault();
         } 

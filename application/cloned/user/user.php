@@ -92,6 +92,29 @@ class User extends DHTMLSQL
         return  $result->fetch_assoc_all()[0];
 
     }
+
+    public function get_aspirant_data($jamb_number, &$validator) {
+   		
+   		$jamb_number = $validator->sanitize_string($jamb_number);
+		
+    	$error = null;
+    	
+    	try {
+    	
+	    	$result = $this->app::$db->select('*','admitted_candidates', 'jamb_number = ?', array($jamb_number));
+    	} catch (Exception $e) {
+    		$error = $e->getMessage();
+    		
+    	}
+    	
+    	if (isset($error)) return $error;
+    	
+        if ($result->affected_rows > 0) {
+            return  $result->fetch_assoc_all()[0];
+        } else return [];
+        
+
+    }
     
     
     

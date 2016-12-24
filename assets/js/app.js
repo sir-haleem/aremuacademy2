@@ -106,14 +106,16 @@ $(document).on('ready', function () {
             });
 
             jqXHR.fail(function () {
-                console.log(arguments);
+                // console.log(arguments);
+                $('p.help-block').
+                        html('An error occurred while requesting the server');
             });
         }
  evt.preventDefault();
     });
 
     appFunctions.contactForm().submit(function (evt) {
-        console.log(appFunctions.contactFormName());
+        
         if(appFunctions.contactFormName() < 2) {
             evt.preventDefault();
         } 

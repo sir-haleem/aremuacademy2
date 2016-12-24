@@ -25,6 +25,7 @@ $course = $aspirant_details['course'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>L.O.A Academy</title>
     <meta name="description" content="Aremu">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="all" href="../assets/css/bootstrap.min.css">
